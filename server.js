@@ -29,7 +29,7 @@ const jobsRouter = require('./routes/jobs');
 app.use('/jobs', jobsRouter);
 
 
-if (process.env.NODE_ENV === "production"){
+if (process.env.NODE_ENV === 'production'){
     app.use(express.static("client/build"));
   
 }
