@@ -99,7 +99,7 @@ margin: 5rem 0;
 }
 
 .btn{
-  display: ;
+  display: none;
 }
 
 
