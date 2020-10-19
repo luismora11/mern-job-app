@@ -77,7 +77,7 @@ margin: 5rem 0;
 
 .content {
   display: none;
-  margin: 1em 0;
+  margin: 1em .1;
 }
 
 .content.active,
