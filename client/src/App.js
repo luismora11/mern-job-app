@@ -9,7 +9,7 @@ import Footer from "./components/layouts/Footer"
 import Jobs from "./components/Jobs";
 import Job from "./components/Job";
 import AddJob from "./components/AddJob";
-import EditJob from "./components/EditJob";
+
 
 
 
@@ -45,7 +45,6 @@ useEffect(() => {
      <Navbar />
      <Route exact path="/" render={() => <Jobs posts={posts} /> }/>
      <Route path="/job/:id" render={(props) => <Job {...props} posts={posts} /> }/>
-     <Route path="/update/:id" render={props => <EditJob {...props} posts={posts} /> }/>
      <Route path="/add-job" component={AddJob} />
      <Footer />
      
