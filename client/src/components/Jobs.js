@@ -7,13 +7,7 @@ import axios from "axios"
 
 
 const Jobs = ({posts}) => {
-const [job, setJob] = useState([]);
-//DELETE
-const deleteJob = id =>{
-  axios.delete(`/jobs/${id}`)
-  .then(res => alert(res.data))
-  setJob(job.filter(elem => elem._id !== id));
-};
+
  
     
    
@@ -41,11 +35,11 @@ const deleteJob = id =>{
                 </div>
                 <div className="row "  >
                     <div className="col-sm-2">
-                     <Link to={`/update/${job._id}`} className="btn btn-success">Edit Job</Link>
+                     <Link to='/' className="btn btn-success">Edit Job</Link>
                     </div>
                
                 <div className="col-sm-2" >
-                    <button onClick={() => deleteJob(job)} className="btn btn-danger">Delete Job</button>
+                    <button className="btn btn-danger">Delete Job</button>
                 </div>
     
                 </div>
